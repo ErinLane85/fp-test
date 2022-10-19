@@ -6,7 +6,7 @@
 	box-sizing: border-box;
 }
 nav {
-    background-color: aqua;
+    background-color: seashell;
     height: 150px;
     position: sticky;
     top: 0;
@@ -19,36 +19,57 @@ img.logo {
 }
 nav ul {
     padding: 40px;
-    margin-left: 165px;
 }
-
 nav ul > li {
     display: inline-block;
-    margin-right: 60px;
 }
 nav > ul > li > a {
     padding: 12px 26px;
-    background-color: #FDFFFC;
-    border-radius: 8px;
+    background-color: seashell;
+    border-radius: 6px;
     text-decoration: none;
 }
 nav > ul > li > a:hover {
     background-color: #011627;
     color: #FDFFFC;
 }
-section {
-    background-color: rgb(180, 139, 219);
-    border-bottom: solid #262626;
+.header {
+    padding: 20px;
+    font-size: 40px;
+    text-align: left;
+    background: aqua;
 }
-article {
-    background-color: palevioletred;
+/* Left column */
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+} 
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+} 
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 main {
     position: static;
-}
-aside {
-    background-color: lightpink;
-    height: 900px;
 }
 footer {
     background-color: seashell;  
@@ -56,11 +77,6 @@ footer {
 nav, footer {
     height: 100px;
     border: 1px solid #262626;
-}
-section, article {
-   height: 450px;
-   border-right: dotted #262626;
-   box-shadow: 5px 10px 8px #888888; 
 }
 .column {
     width: 49%;
